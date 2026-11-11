@@ -16,7 +16,7 @@ cd campus-bus-challenge
 python3 -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
-python FinalProject.py
+python "20231855- 팜 응옥 아잉- FinalProject.py"
 ```
 
 **Windows (PowerShell)**
@@ -26,10 +26,10 @@ cd campus-bus-challenge
 py -m venv .venv
 .venv\Scripts\Activate.ps1
 pip install -r requirements.txt
-python FinalProject.py
+python "20231855- 팜 응옥 아잉- FinalProject.py"
 ```
 
-Khi nộp bài, đổi tên `FinalProject.py` thành `학번_이름_FinalProject.py`.
+File game đã được đặt tên theo quy định nộp bài: `20231855- 팜 응옥 아잉- FinalProject.py`.
 
 ## Điều khiển
 
@@ -60,7 +60,7 @@ Khi nộp bài, đổi tên `FinalProject.py` thành `학번_이름_FinalProject
 
 ## Cấu trúc code
 
-Toàn bộ nằm trong một file `FinalProject.py`, chia thành 4 phần:
+Toàn bộ nằm trong một file `20231855- 팜 응옥 아잉- FinalProject.py`, chia thành 4 phần:
 
 1. **Logic thuần** (không vẽ, test được): `calculate_speed`, `calculate_grade`, `calculate_points`,
    `new_game_state`, `start_stop`, `new_run`, `resolve_stop`, `press_space`, `finish_result`,

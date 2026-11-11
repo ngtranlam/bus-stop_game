@@ -38,7 +38,7 @@ cd campus-bus-challenge
 python3 -m venv .venv
 source .venv/bin/activate          # Windows: .venv\Scripts\Activate.ps1
 pip install -r requirements.txt
-python FinalProject.py
+python "20231855- 팜 응옥 아잉- FinalProject.py"
 ```
 
 Chạy kiểm thử (27 test cho luật chơi):
@@ -51,7 +51,7 @@ python -m unittest discover -s tests -v
 
 ```
 campus-bus-challenge/
-  FinalProject.py        # toàn bộ game: 5 hàm chính init / handle_input / update_game / render / run_game
+  20231855- 팜 응옥 아잉- FinalProject.py   # toàn bộ game: 5 hàm chính init / handle_input / update_game / render / run_game
   tests/test_rules.py    # kiểm thử luật chơi (unittest)
   requirements.txt
   README.md              # hướng dẫn chi tiết, luật chơi, hạn chế đã biết
@@ -66,4 +66,3 @@ Campus_Bus_Game_Implementation.md   # đặc tả triển khai
 
 - Đồ họa pixel-art được vẽ hoàn toàn bằng code Pygame, không dùng file ảnh hay âm thanh bên ngoài.
 - Game được phát triển với sự hỗ trợ của AI (Claude Code). Quá trình sử dụng AI được ghi lại trong `DEV_NOTES.md` và mục 8 của báo cáo.
-- Khi nộp bài, đổi tên `FinalProject.py` thành `학번_이름_FinalProject.py`, rồi điền thông tin cá nhân vào báo cáo.

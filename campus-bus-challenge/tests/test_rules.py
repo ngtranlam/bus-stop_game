@@ -13,9 +13,24 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 os.environ.setdefault("PYGAME_HIDE_SUPPORT_PROMPT", "1")
 
+import importlib.util  # noqa: E402
+
 import pygame  # noqa: E402
 
-import FinalProject as game  # noqa: E402
+
+def load_game():
+    """Nạp file game theo đường dẫn vì tên file nộp bài có dấu cách, không import trực tiếp được."""
+    project_dir = Path(__file__).resolve().parent.parent
+    matches = sorted(project_dir.glob("*FinalProject.py"))
+    if len(matches) != 1:
+        raise FileNotFoundError(f"Cần đúng 1 file *FinalProject.py trong {project_dir}, tìm thấy {len(matches)}")
+    spec = importlib.util.spec_from_file_location("final_project", matches[0])
+    module = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(module)
+    return module
+
+
+game = load_game()
 
 
 def key_event(key):
