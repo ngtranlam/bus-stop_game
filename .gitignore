@@ -1,0 +1,7 @@
+.venv/
+__pycache__/
+*.pyc
+.DS_Store
+~$*
+# Tài liệu hướng dẫn của giảng viên: không đưa lên repo public
+*.xlsx
